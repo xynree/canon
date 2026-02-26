@@ -29,14 +29,14 @@
 
 Design and create these tables in Supabase:
 
-- [ ] **`profiles`** — `id` (references auth.users), `name`, `avatar_color`, `created_at`
-- [ ] **`rooms`** — `id`, `name`, `emoji`, `created_by`, `created_at`
-- [ ] **`room_members`** — `room_id`, `user_id`, `joined_at` (junction table)
-- [ ] **`categories`** — `id`, `room_id` (null = global), `label`, `emoji`, `created_by`
-- [ ] **`experiences`** — `id`, `room_id`, `title`, `category_id`, `date`, `added_by`, `created_at`
-- [ ] **`ratings`** — `id`, `experience_id`, `user_id`, `score`, `note`, `created_at` — multiple rows per user per experience, latest by `created_at` wins
-- [ ] Write Row Level Security (RLS) policies: users can only read/write data for rooms they are members of
-- [ ] Seed the database with test data matching the prototype (two rooms, sample entries)
+- [x] **`profiles`** — `id` (references auth.users), `name`, `avatar_color`, `created_at`
+- [x] **`rooms`** — `id`, `name`, `emoji`, `created_by`, `created_at`
+- [x] **`room_members`** — `room_id`, `user_id`, `joined_at` (junction table)
+- [x] **`categories`** — `id`, `room_id` (null = global), `name`, `emoji`, `created_by`
+- [x] **`experiences`** — `id`, `room_id`, `title`, `category_id`, `date`, `created_by`, `created_at`
+- [x] **`ratings`** — `id`, `experience_id`, `user_id`, `score`, `note`, `created_at` — multiple rows per user per experience, latest by `created_at` wins
+- [x] Write Row Level Security (RLS) policies: users can only read/write data for rooms they are members of
+- [x] Seed the database with test data matching the prototype (two rooms, sample entries)
 
 ### Authentication
 
