@@ -22,9 +22,8 @@
 - [x] Set up ESLint, Prettier, and absolute import paths (`@/components`, `@/lib`, etc.)
 - [x] Create a Supabase project at supabase.com
 - [x] Install `@supabase/supabase-js` and `expo-secure-store`
-- [ ] Wire up Supabase client in `lib/supabase.ts` using `AsyncStorage` adapter for auth session persistence
-- [ ] Set up environment variables with `expo-constants` (never hardcode keys)
-- [ ] Configure EAS Build for later TestFlight/Play Store deployment (optional at this stage but good to do early)
+- [x] Wire up Supabase client in `lib/supabase.ts` using `AsyncStorage` adapter for auth session persistence
+- [x] Set up environment variables with `expo-constants` (never hardcode keys)
 
 ### Database Schema
 
